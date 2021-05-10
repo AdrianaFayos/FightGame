@@ -1,0 +1,46 @@
+body{
+    margin: 0em;
+    padding: 0em;
+}
+
+/* STAGE 1 */
+
+.firstScreen {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("/img/home.jpg");
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.startButton {
+    all: unset;
+    background: black;
+    font-family: 'Star Jedi', sans-serif;
+    color: yellow;
+    padding: .5em;
+    border-radius: 1em;
+    border: .2em solid yellow;
+    font-size: xx-large;
+    transition: 0.5s;
+}
+
+.startButton:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* STAGE 2 */
+
+.secondScreen {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("/img/backgroundCharacters.jpg");
+    background-position: center;
+}
