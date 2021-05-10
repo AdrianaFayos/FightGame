@@ -44,3 +44,13 @@ body{
     background-image: url("/img/backgroundCharacters.jpg");
     background-position: center;
 }
+
+/* STAGE 3 */
+
+.thirdScreen {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("/img/backgroundFight.jpg");
+    background-position: center;
+}
