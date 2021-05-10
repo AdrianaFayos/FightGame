@@ -13,12 +13,38 @@
     <!-- STAGE 1 -->
 
     <div class="firstScreen" id="stage1">
-        <button class="startButton">START</button>
+        <button onclick="changeStage('stage2')" class="startButton">START</button>
     </div>
 
     <!-- STAGE 2 -->
 
-    <div class="secondScreen" id="stage2" style="display:none">  </div>
+    <div class="secondScreen" id="stage2" style="display:none">  
+
+        <div class="secondScreenContainer">
+    
+            <div class="fighterOne">
+                <div class="fighterName">Player 1</div>
+                <div class="fighterSelected" ></div>
+            </div>
+    
+            <div class="fighters">
+                <div class="avatar" id="1"><img class="picFighter" src="img/characters/lukeSkywalker.png"></div>
+                <div class="avatar" id="2"><img class="picFighter" src="img/characters/leia.png"></div>
+                <div class="avatar" id="3"><img class="picFighter" src="img/characters/yoda.png"></div>
+                <div class="avatar" id="4"><img class="picFighter" src="img/characters/chewbacca.png"></div>
+                <div class="avatar" id="5"><img class="picFighter" src="img/characters/darthVader.png"></div>
+                <div class="avatar" id="6"><img class="picFighter" src="img/characters/darthMaul.png"></div>
+                <div class="avatar" id="7"><img class="picFighter" src="img/characters/emperorPalpatine.png"></div>
+                <div class="avatar" id="8"><img class="picFighter" src="img/characters/stormtrooper.png"></div>
+            </div>
+    
+            <div class="fighterTwo">
+                <div class="fighterName">Player 2</div>
+                <div class="fighterSelected"></div>
+            </div>
+
+        </div>
+    </div>
 
     <!-- STAGE 3 -->
 

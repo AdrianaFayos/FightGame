@@ -1,6 +1,7 @@
 body{
     margin: 0em;
     padding: 0em;
+    overflow: auto;
 }
 
 /* STAGE 1 */
@@ -40,10 +41,69 @@ body{
 .secondScreen {
     width: 100vw;
     height: 100vh;
+    background-image: url("/img/backgroundCharacters.png");
 
-    background-image: url("/img/backgroundCharacters.jpg");
-    background-position: center;
 }
+
+.secondScreenContainer {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.fighters {
+    width: 50%;
+    height: 80%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.picFighter{
+    background: none;
+    width: 7em;
+    height: 12em;
+    border-radius: 1em;
+    border: .3em solid yellow;
+    margin: 1em;
+    transition: 0.5s;
+}
+
+.picFighter:hover{
+    background: rgb(104, 104, 104);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.fighterOne, .fighterTwo{
+   height: 40em;
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fighterName {
+    font-family: 'Star Jedi', sans-serif;
+    color: yellow;
+    font-size: xx-large;
+}
+
+.fighterSelected{
+    height: 30em;
+    width: 100%;
+}
+
+
+
 
 /* STAGE 3 */
 
