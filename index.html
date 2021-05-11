@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fight Game</title>
+    <title>Star Wars Game</title>
     <link href="http://fonts.cdnfonts.com/css/starjedi-special-edition" rel="stylesheet">             
     <link href="css/style.css" type="text/css" rel="stylesheet" >
 </head>
 <body>
     
+     <!-- MUSIC -->
+
+    <div id="musicContainer">
+        <button id="musicButton" onclick="pauseMusic()">
+            <i class="fas fa-volume-up"></i>
+            <audio id="music"><source src="audio/backgroundMusic.mp4" type="audio/wav"></audio>
+        </button>
+    </div>
+    
     <!-- STAGE 1 -->
 
     <div class="firstScreen" id="stage1">
-        <button onclick="changeStage('stage2')" class="startButton">START</button>
-    </div>
+        <div class="firstScreenContainer">
+            <button onclick="changeStage('stage2')" class="startButton">START</button>
+        </div>
+   </div>
 
     <!-- STAGE 2 -->
 
@@ -62,7 +73,7 @@
     <div class="fourthScreen" id="stage4" style="display:none"></div>
 
 
-
+    <script src="https://kit.fontawesome.com/550acb09e5.js" crossorigin="anonymous"></script>
     <script src="js/characters.js"></script>
     <script src="js/main.js"></script>
 </body>

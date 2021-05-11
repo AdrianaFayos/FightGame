@@ -77,4 +77,30 @@ const fighting = () => {
 
 }
 
+// Play or Pause Music
+
+let button = document.getElementById("musicContainer");
+let music = document.getElementById("music");
+
+const playMusic = () => {
+
+    music.play();
+
+    button.innerHTML = `
+    <button id="musicButton" onclick="pauseMusic()">
+       <i class="fas fa-volume-mute"></i>
+    </button>`
+
+}
+
+const pauseMusic = () => {
+    
+    music.pause();
+
+    button.innerHTML = `
+    <button id="musicButton" onclick="playMusic()">
+        <i class="fas fa-volume-up"></i>
+    </button>`
+}
+
 

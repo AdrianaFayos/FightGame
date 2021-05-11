@@ -4,7 +4,34 @@ body{
     overflow: auto;
 }
 
+#musicContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#musicButton {
+    all: unset;
+    background: black;
+    font-family: 'Star Jedi', sans-serif;
+    color: yellow;
+    padding: .5em;
+    border-radius: 1em;
+    border: .2em solid yellow;
+    transition: 0.5s;
+    position: absolute;
+    margin: 1em;
+}
+
+#musicButton:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+
 /* STAGE 1 */
+
+
 
 .firstScreen {
     width: 100vw;
@@ -12,9 +39,14 @@ body{
 
     background-image: url("/img/home.jpg");
     background-position: center;
+}
+
+.firstScreenContainer {
+    width: 100vw;
+    height: 100vh;
 
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
@@ -28,6 +60,7 @@ body{
     border: .2em solid yellow;
     font-size: xx-large;
     transition: 0.5s;
+    margin: 6em;
 }
 
 .startButton:hover, .playButton:hover {
