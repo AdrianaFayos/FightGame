@@ -39,12 +39,11 @@ const chooseFighter = (character) => {
         img2.innerHTML = `<img class="imgFighter2" src="img/characters/${fighter2.picName}.png" alt="fighter2" >`;
 
         fillPlayers();
-       
+   
         setTimeout(() => {
            changeStage("stage3");
-        }, 2500);
+        }, 3000); 
     }
-
 }
 
 
@@ -69,15 +68,13 @@ const fillPlayers = () => {
 }
 
 
-//descargar lightsaber. sound en mp4 y probar
-
 const fighting = () => {
 
     lightsaber = document.getElementById("lightsaber");
     lightsaber.play();
 
     console.log("empieza la lucha");
-    
+
 }
 
 

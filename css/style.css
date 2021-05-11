@@ -30,7 +30,7 @@ body{
     transition: 0.5s;
 }
 
-.startButton:hover {
+.startButton:hover, .playButton:hover {
     cursor: pointer;
     transform: scale(1.05);
     transition: 0.5s;
@@ -54,10 +54,15 @@ body{
     align-items: center;
 }
 
-.fighters {
-    width: 50%;
-    height: 80%;
+.centerSecondScreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.fighters {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -132,6 +137,19 @@ body{
     margin: 1em;
     transition: 0.5s;
     background: rgb(104, 104, 104);
+}
+
+.playButton {
+    all: unset;
+    background: black;
+    font-family: 'Star Jedi', sans-serif;
+    color: yellow;
+    padding: .5em;
+    border-radius: 1em;
+    border: .2em solid yellow;
+    font-size: xx-large;
+    transition: 0.5s;
+    margin-top: 1.5em;
 }
 
 
