@@ -28,6 +28,12 @@ const chooseFighter = (character) => {
         img1 = document.getElementById("imgFighterSelected1");
 
         img1.innerHTML = `<img class="imgFighter1" src="img/characters/${fighter1.picName}.png" alt="fighter1" >`;
+        /*
+        <audio id="fighterAudio1"><source src="audio//characters/${fighter1.picName}.mp4" type="audio/wav"></audio>`;
+        
+        fighterAudio1 = document.getElementById("fighterAudio1");
+        fighterAudio1.play();  */
+
 
     } else if ( fighter2 == "") {
 
@@ -36,7 +42,12 @@ const chooseFighter = (character) => {
         document.getElementById(character).className = "fighterSelected2";
 
         img2 = document.getElementById("imgFighterSelected2");
-        img2.innerHTML = `<img class="imgFighter2" src="img/characters/${fighter2.picName}.png" alt="fighter2" >`;
+        img2.innerHTML = `<img class="imgFighter2" src="img/characters/${fighter2.picName}.png" alt="fighter2">`;
+        /*
+        <audio id="fighterAudio2"><source src="audio/characters/${fighter2.picName}.mp4" type="audio/wav"></audio>`;
+        
+        fighterAudio2 = document.getElementById("fighterAudio2");
+        fighterAudio2.play(); */
 
         fillPlayers();
    
