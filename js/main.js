@@ -2,6 +2,7 @@
 let fighter1 = "";
 let fighter2 = "";
 
+
 const changeStage = (destination) => {
 
     let arrStage = ["stage1", "stage2", "stage3", "stage4"];
@@ -15,11 +16,10 @@ const changeStage = (destination) => {
     }
 }
 
+
 const chooseFighter = (character) => {
 
     if ( fighter1 == "" ) {
-
-        console.log("entro")
 
         fighter1 = allPlayers[character];
         
@@ -48,7 +48,6 @@ const chooseFighter = (character) => {
 }
 
 
-
 const fillPlayers = () => {
 
     let players = document.getElementById("players");
@@ -58,10 +57,18 @@ const fillPlayers = () => {
          <div class="lifeBar"></div>
          <div class="picFighter1"><img class="imgFighter1" src="img/characters/${fighter1.picName}.png" alt="fighter1" ></div>
     </div>
-    <div class="vs">VS</div>
+    <div class="centralDiv">
+        <img class="logo" src="img/logo.png" alt="logo">
+        <button class="attackButton" onclick="fighting()">ATTACK</button>
+    </div>
     <div class="fighterTwo">
          <div class="lifeBar"></div>
          <div class="picFighter2"><img class="imgFighter2" src="img/characters/${fighter2.picName}.png" alt="fighter2"></div>
     </div>`
 }
 
+
+const fighting = () => {
+
+    console.log("empieza la lucha")
+}
