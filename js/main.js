@@ -29,7 +29,7 @@ const chooseFighter = (character) => {
 
         img1.innerHTML = `<img class="imgFighter1" src="img/characters/${fighter1.picName}.png" alt="fighter1" >`;
 
-    } else if ( fighter2 == "" ) {
+    } else if ( fighter2 == "") {
 
         fighter2 = allPlayers[character];
         
@@ -42,7 +42,7 @@ const chooseFighter = (character) => {
        
         setTimeout(() => {
            changeStage("stage3");
-        }, 2000);
+        }, 2500);
     }
 
 }
@@ -60,6 +60,7 @@ const fillPlayers = () => {
     <div class="centralDiv">
         <img class="logo" src="img/logo.png" alt="logo">
         <button class="attackButton" onclick="fighting()">ATTACK</button>
+        <audio id="lightsaber"><source src="audio/lightsaberSound.mp4" type="audio/wav"></audio>
     </div>
     <div class="fighterTwo">
          <div class="lifeBar"></div>
@@ -68,7 +69,15 @@ const fillPlayers = () => {
 }
 
 
+//descargar lightsaber. sound en mp4 y probar
+
 const fighting = () => {
 
-    console.log("empieza la lucha")
+    console.log("empieza la lucha");
+
+    lightsaber = document.getElementById("lightsaber");
+    lightsaber.play();
+
 }
+
+

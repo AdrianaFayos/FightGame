@@ -110,6 +110,30 @@ body{
     height: 30em;
 }
 
+.fighterSelected1{
+    border: .3em solid blue;
+    background: none;
+    width: 7em;
+    padding: .5em;
+    height: 12em;
+    border-radius: 1em;
+    margin: 1em;
+    transition: 0.5s;
+    background: rgb(104, 104, 104);
+}
+
+.fighterSelected2{
+    border: .3em solid red;
+    background: none;
+    width: 7em;
+    padding: .5em;
+    height: 12em;
+    border-radius: 1em;
+    margin: 1em;
+    transition: 0.5s;
+    background: rgb(104, 104, 104);
+}
+
 
 /* STAGE 3 */
 
