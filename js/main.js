@@ -73,11 +73,11 @@ const fillPlayers = () => {
 
 const fighting = () => {
 
-    console.log("empieza la lucha");
-
     lightsaber = document.getElementById("lightsaber");
     lightsaber.play();
 
+    console.log("empieza la lucha");
+    
 }
 
 
