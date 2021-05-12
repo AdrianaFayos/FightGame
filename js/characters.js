@@ -7,7 +7,7 @@ class Fighter{
         this.picName = picName
         this.attack = attack;
         this.defense = defense;
-        this.tecnica = technique;
+        this.technique = technique;
         this.speed = speed;
     }
 
@@ -22,14 +22,14 @@ class Fighter{
     }
 };
 
-let player1 = new Fighter("Luke Skywalker", "lukeSkywalker");
-let player2 = new Fighter("Leia", "leia",);
-let player3 = new Fighter("Yoda", "yoda");
-let player4 = new Fighter("Chewbacca", "chewbacca");
-let player5 = new Fighter("Darth Vader", "darthVader");
-let player6 = new Fighter("Darth Maul", "darthMaul");
-let player7 = new Fighter("Emperor Palpatine", "emperorPalpatine");
-let player8 = new Fighter("Stormtrooper", "stormtrooper");
+let player1 = new Fighter("Luke Skywalker", "lukeSkywalker", 30, 40, 20, 40);
+let player2 = new Fighter("Leia", "leia", 20, 30, 20, 20);
+let player3 = new Fighter("Yoda", "yoda", 50, 40, 40, 10);
+let player4 = new Fighter("Chewbacca", "chewbacca", 40, 20, 20, 30);
+let player5 = new Fighter("Darth Vader", "darthVader", 40, 30, 40, 30 );
+let player6 = new Fighter("Darth Maul", "darthMaul", 30, 20, 30, 30);
+let player7 = new Fighter("Emperor Palpatine", "emperorPalpatine", 50,20,30,20);
+let player8 = new Fighter("Stormtrooper", "stormtrooper", 20, 20, 30, 30 );
 
 let allPlayers = {
     "1" : player1,

@@ -1,9 +1,8 @@
-#  Fight Game 
+#  Star Wars Fighting Game 
 
 Tercer reto del Bootcamp FullStack Developer con <a href="https://geekshubsacademy.com/">GeeksHubs Academy</a> en el que nos piden emular un juego de lucha.
 
-Fecha de inicio: 11 Mayo de 2021.
-Fecha máxima de entrega: 16 Mayo de 2021.
+Fecha de inicio: 11 Mayo de 2021. <br>Fecha máxima de entrega: 16 Mayo de 2021.
 
 ### Contenido 💬
 
@@ -23,7 +22,7 @@ El juego está ambientado en la mítica película de Star Wars y está dividido 
 - En la última pantalla saldrá la imagen del jugador que ha ganado y también tendremos la posibilidad de reiniciar el juego.
 
 <br>
-Si quieres empezar a jugar haz click en el siguiente enlace: [Fight-Game](aquí va el enlace de pages).<br>
+Si quieres empezar a jugar haz click en el siguiente enlace: [Fight-Game](aquí va el enlace de pages).<br><br>
 ¡Buena suerte! 🍀
 
 ### Tecnologías utilizadas 

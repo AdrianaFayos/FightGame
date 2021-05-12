@@ -220,8 +220,22 @@ body{
     height: 15em;
 }
 
+#infoFight {
+    height: 5em;
+    width: 10em;
+    background: black;
+    font-family: 'Star Jedi', sans-serif;
+    color: yellow;
+    padding: .5em;
+    border-radius: 1em;
+    border: .2em solid yellow;
+    font-size: x-large; 
+    text-align: center;
+}
+
 .attackButton {
     all: unset;
+    margin-top: 2em;
     background: black;
     font-family: 'Star Jedi', sans-serif;
     color: yellow;
@@ -238,12 +252,12 @@ body{
     transition: 0.5s;
 }
 
-.lifeBar {
+.lifeBar1, .lifeBar2 {
     background-color: chartreuse;
     height: 1.5em;
     width: 18em;
     border-radius: 1em;
-
+    text-align: center;
 }
 
 .picFighter1, .picFighter2 {
