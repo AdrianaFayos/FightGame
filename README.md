@@ -16,7 +16,7 @@ El juego está ambientado en la mítica película de Star Wars y está dividido 
 ### Instrucciones 🔧
 
 - Para iniciar el juego deberemos pulsar el botón START. 
-- A continuación deberemos escoger dos personajes haciendo click sobre su imagen.
+- A continuación escogeremos dos personajes haciendo click sobre su imagen.
 - Una vez hayamos elegido los dos rivales, para empezar la batalla podemos presionar el botón de play o simplemente esperar 3 segundos.
 - Cuando estemos en la siguiente pantalla haremos click sobre el botón ATACK para comenzar la lucha. El turno será aleatorio y variará en dos ataques diferentes: normal y especial. Cuando la vida de uno de los personajez sea menor a cero automáticamente habrá un ganador.
 - En la última pantalla saldrá la imagen del jugador que ha ganado y también tendremos la posibilidad de reiniciar el juego.

@@ -97,14 +97,14 @@ const fighting = () => {
     console.log("empieza la lucha");
 
     let turn = Math.floor(Math.random() * 2);
-    let superAttack = Math.floor(Math.random() * 4);
+    let specialAttack = Math.floor(Math.random() * 4);
     let infoFight = document.getElementById("infoFight");
     let life1 = document.getElementById("lifeBar1");
     let life2 = document.getElementById("lifeBar2");
 
     if ( turn == 0) {
 
-        if ( superAttack == 3 ) {
+        if ( specialAttack == 3 ) {
 
             fighter1.specialHit(fighter2);
             infoFight.innerHTML = `${fighter1.name} Special Hit`;
@@ -118,7 +118,7 @@ const fighting = () => {
 
     } else {
 
-        if ( superAttack == 4 ) {
+        if ( specialAttack == 4 ) {
 
             fighter2.specialHit(fighter1);
             infoFight.innerHTML = `${fighter2.name} Special Hit`;
@@ -138,7 +138,35 @@ const fighting = () => {
     life1.innerHTML = `${fighter1.life}`;
     life2.innerHTML = `${fighter2.life}`;
 
+    Winner();
 
+}
+
+// Winner
+
+const Winner = () => {
+    
+    let winner;
+
+    if(fighter1.life <= 0){
+
+        winner = fighter2;
+        console.log("El jugador 2 gana.");
+
+        setTimeout(() => {
+            changeStage("stage4");
+         }, 2000); 
+
+    } else if(fighter2.life <= 0){
+
+        winner = fighter1;
+        console.log("El jugador 1 gana.")
+
+        setTimeout(() => {
+            changeStage("stage4");
+         }, 2000); 
+
+    }
 }
 
 // Play or Pause Music

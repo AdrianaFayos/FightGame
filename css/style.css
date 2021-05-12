@@ -31,13 +31,11 @@ body{
 
 /* STAGE 1 */
 
-
-
 .firstScreen {
     width: 100vw;
     height: 100vh;
 
-    background-image: url("/img/home.jpg");
+    background-image: url("../img/home.jpg");
     background-position: center;
 }
 
@@ -74,7 +72,7 @@ body{
 .secondScreen {
     width: 100vw;
     height: 100vh;
-    background-image: url("/img/backgroundCharacters.png");
+    background-image: url("../img/backgroundCharacters.png");
 
 }
 
@@ -192,7 +190,7 @@ body{
     width: 100vw;
     height: 100vh;
 
-    background-image: url("/img/backgroundFight.png");
+    background-image: url("../img/backgroundFight.png");
     background-position: center;
 }
 
@@ -273,4 +271,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* STAGE 4 */
+
+.fourthScreen {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("../img/backgroundWinner.png");
+    background-position: center;
 }
