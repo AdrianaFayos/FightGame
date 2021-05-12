@@ -69,17 +69,17 @@ const fillPlayers = () => {
 
     players.innerHTML = `
     <div class="fighterOne" >
-         <div class="lifeBar1">${fighter1.life}</div>
+         <div id="lifeBar1">${fighter1.life}</div>
          <div class="picFighter1"><img class="imgFighter1" src="img/characters/${fighter1.picName}.png" alt="fighter1" ></div>
     </div>
     <div class="centralDiv">
         <img class="logo" src="img/logo.png" alt="logo">
-        <div id="infoFight"></div>
+        <div id="infoFight">START</div>
         <button class="attackButton" onclick="fighting()">ATTACK</button>
         <audio id="lightsaber"><source src="audio/lightsaberSound.mp4" type="audio/wav"></audio>
     </div>
     <div class="fighterTwo">
-         <div class="lifeBar2">${fighter2.life}</div>
+         <div id="lifeBar2">${fighter2.life}</div>
          <div class="picFighter2"><img class="imgFighter2" src="img/characters/${fighter2.picName}.png" alt="fighter2"></div>
     </div>`
 }
@@ -97,10 +97,10 @@ const fighting = () => {
     console.log("empieza la lucha");
 
     let turn = Math.floor(Math.random() * 2);
-    superAttack = Math.floor(Math.random() * 4);
-    infoFight = document.getElementById("infoFight");
-    life1 = document.getElementsByClassName("lifeBar1");
-    life2 = document.getElementsByClassName("lifeBar2");
+    let superAttack = Math.floor(Math.random() * 4);
+    let infoFight = document.getElementById("infoFight");
+    let life1 = document.getElementById("lifeBar1");
+    let life2 = document.getElementById("lifeBar2");
 
     if ( turn == 0) {
 
@@ -133,9 +133,10 @@ const fighting = () => {
 
     }
 
-    life1.value = `${fighter1.life}`;
-    life2.value = `${fighter2.life}`;
-
+    console.log(fighter1.life);
+    console.log(fighter2.life);
+    life1.innerHTML = `${fighter1.life}`;
+    life2.innerHTML = `${fighter2.life}`;
 
 
 }

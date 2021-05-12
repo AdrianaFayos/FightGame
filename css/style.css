@@ -252,9 +252,14 @@ body{
     transition: 0.5s;
 }
 
-.lifeBar1, .lifeBar2 {
-    background-color: chartreuse;
-    height: 1.5em;
+#lifeBar1, #lifeBar2 {
+    background: black;
+    font-family: 'Star Jedi', sans-serif;
+    color: yellow;
+    padding: .5em;
+    border-radius: 1em;
+    border: .2em solid yellow;
+    height: 1.8em;
     width: 18em;
     border-radius: 1em;
     text-align: center;
