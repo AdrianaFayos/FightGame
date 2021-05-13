@@ -21,7 +21,8 @@ El juego está ambientado en la mítica película de Star Wars y está dividido 
 - Cuando estemos en la siguiente pantalla haremos click sobre el botón *ATACK* para comenzar la lucha. El turno será aleatorio y variará en dos ataques diferentes: normal y especial. Cuando la vida de uno de los personajes sea menor o igual a cero automáticamente habrá un ganador.
 - En la última pantalla saldrá la imagen del vencedor y también tendremos la posibilidad de reiniciar el juego.
 <br>
-Si quieres empezar a jugar haz click en el siguiente enlace: <br>https://adrianafayos.github.io/FightGame/.<br>
+Si quieres empezar a jugar haz click en el siguiente enlace: <br>https://adrianafayos.github.io/FightGame/.
+<br><br>
 ¡Buena suerte! 🍀
 
 ### Tecnologías utilizadas 

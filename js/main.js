@@ -87,10 +87,6 @@ const fillPlayers = () => {
 
 const fighting = () => {
 
-    // Play lightsaber sound on click
-    lightsaber = document.getElementById("lightsaber");
-    lightsaber.play();
-
     // Div Fight Information
 
     document.getElementById("infoContainer").innerHTML= `<div id="infoFight"></div>`
@@ -107,41 +103,58 @@ const fighting = () => {
 
     if ( (fighter1.life > 0 ) && (fighter2.life > 0 )) {
 
-    if (turn == 0) {
+         // Play lightsaber sound on click
+        lightsaber = document.getElementById("lightsaber");
+        lightsaber.play();
 
-        if ( specialAttack == 3 ) {
+        if (turn == 0) {
 
-            fighter1.specialHit(fighter2);
-            infoFight.innerHTML = `${fighter1.name} Special Hit`;
+            if ( specialAttack == 3 ) {
+
+                fighter1.specialHit(fighter2);
+                infoFight.innerHTML = `${fighter1.name} Special Hit`;
+
+            } else {
+
+                fighter1.hit(fighter2);
+                infoFight.innerHTML = `${fighter1.name} hits ${fighter2.name}`;
+
+            }
 
         } else {
 
-            fighter1.hit(fighter2);
-            infoFight.innerHTML = `${fighter1.name} hits ${fighter2.name}`;
+            if ( specialAttack == 4 ) {
+
+                fighter2.specialHit(fighter1);
+                infoFight.innerHTML = `${fighter2.name} Special Hit`;
+        
+
+            } else {
+
+                fighter2.hit(fighter1);
+                infoFight.innerHTML = `${fighter2.name} hits ${fighter1.name}`;
+
+            }
 
         }
+    };
+
+    // Life Bar can not be under 0 
+
+    if ((fighter1.life > 0 ) && (fighter2.life > 0 )) {
+
+        life1.innerHTML = `${fighter1.life}`;
+        life2.innerHTML = `${fighter2.life}`;
+    
+    } else if (fighter1.life <= 0){ 
+
+        life1.innerHTML = "0" 
 
     } else {
 
-        if ( specialAttack == 4 ) {
-
-            fighter2.specialHit(fighter1);
-            infoFight.innerHTML = `${fighter2.name} Special Hit`;
-    
-
-        } else {
-
-            fighter2.hit(fighter1);
-            infoFight.innerHTML = `${fighter2.name} hits ${fighter1.name}`;
-
-        }
-
-    }};
-
-    console.log(fighter1.life);
-    console.log(fighter2.life);
-    life1.innerHTML = `${fighter1.life}`;
-    life2.innerHTML = `${fighter2.life}`;
+            life2.innerHTML = "0"
+    }
+         
 
     Winner();
 
