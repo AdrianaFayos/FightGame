@@ -13,7 +13,7 @@
      <!-- MUSIC -->
 
     <div id="musicContainer">
-        <button id="musicButton" onclick="pauseMusic()">
+        <button id="musicButton" onclick="pauseMusic()" autoplay>
             <i class="fas fa-volume-up"></i>
             <audio id="music"><source src="audio/backgroundMusic.mp4" type="audio/mp4"></audio>
         </button>
@@ -71,7 +71,8 @@
 
     <!-- STAGE 4 WINNER -->
 
-    <div class="fourthScreen" id="stage4" style="display:none"></div>
+    <div class="fourthScreen" id="stage4" style="display:none">
+        <div class="fourthScreenContainer" id="winner"></div>
 
 
     <script src="https://kit.fontawesome.com/550acb09e5.js" crossorigin="anonymous"></script>

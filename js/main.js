@@ -149,12 +149,11 @@ const fighting = () => {
 
 const Winner = () => {
     
-    let winner;
+    let winner="";
 
     if(fighter1.life <= 0){
 
-        winner = fighter2;
-        console.log("El jugador 2 gana.");
+        fillWinner(fighter2);
 
         setTimeout(() => {
             changeStage("stage4");
@@ -162,8 +161,7 @@ const Winner = () => {
 
     } else if(fighter2.life <= 0){
 
-        winner = fighter1;
-        console.log("El jugador 1 gana.")
+        fillWinner(fighter1);
 
         setTimeout(() => {
             changeStage("stage4");
@@ -171,6 +169,23 @@ const Winner = () => {
 
     }
 }
+
+
+// Fill Winner Stage 4
+
+const fillWinner = (winner) => {
+
+    let winnerContainer = document.getElementById("winner");
+
+    winnerContainer.innerHTML = `
+    <div><img class="winnerPic" src="img/characters/${winner.picName}.png" alt="winner" ></div>
+    <div class="winnerButton">
+          <div class="winnerText">${winner.name} wins !!</div>
+          <button onclick="changeStage('stage1')" class="resetButton">start again</button>
+    </div>      
+   `
+} 
+
 
 // Play or Pause Music
 

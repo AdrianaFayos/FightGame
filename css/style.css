@@ -140,13 +140,33 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    -webkit-filter: drop-shadow(2px 2px 0 black)
+    drop-shadow(-2px 2px 0 black)
+    drop-shadow(2px -2px 0 black)
+    drop-shadow(-2px -2px 0 black);
+
+    filter: drop-shadow(2px 2px 0 black)
+    drop-shadow(-2px 2px 0 black)
+    drop-shadow(2px -2px 0 black)
+    drop-shadow(-2px -2px 0 black);
 }
 
 .imgFighter1, .imgFighter2{
     height: 30em;
+    -webkit-filter: drop-shadow(2px 2px 0 black)
+    drop-shadow(-2px 2px 0 black)
+    drop-shadow(2px -2px 0 black)
+    drop-shadow(-2px -2px 0 black);
+
+    filter: drop-shadow(2px 2px 0 black)
+    drop-shadow(-2px 2px 0 black)
+    drop-shadow(2px -2px 0 black)
+    drop-shadow(-2px -2px 0 black);
 }
 
 .fighterSelected1{
+    filter: grayscale();
     border: .3em solid blue;
     background: none;
     width: 7em;
@@ -156,9 +176,11 @@ body{
     margin: 1em;
     transition: 0.5s;
     background: rgb(104, 104, 104);
+    
 }
 
 .fighterSelected2{
+    filter: grayscale();
     border: .3em solid red;
     background: none;
     width: 7em;
@@ -168,7 +190,9 @@ body{
     margin: 1em;
     transition: 0.5s;
     background: rgb(104, 104, 104);
+    
 }
+
 
 .playButton {
     all: unset;
@@ -281,4 +305,61 @@ body{
 
     background-image: url("../img/backgroundWinner.png");
     background-position: center;
+}
+
+.fourthScreenContainer{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.winnerPic {
+    height: 40em;
+    width: 20em;
+
+    -webkit-filter: drop-shadow(2px 2px 0 yellow)
+    drop-shadow(-2px 2px 0 yellow)
+    drop-shadow(2px -2px 0 yellow)
+    drop-shadow(-2px -2px 0 yellow);
+
+    filter: drop-shadow(2px 2px 0 yellow)
+    drop-shadow(-2px 2px 0 yellow)
+    drop-shadow(2px -2px 0 yellow)
+    drop-shadow(-2px -2px 0 yellow);
+}
+
+.winnerButton {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.winnerText {
+    font-family: 'Star Jedi', sans-serif;
+    color: yellow;
+    font-size: 3em;
+}
+
+.resetButton {
+    all: unset;
+    background: black;
+    font-family: 'Star Jedi', sans-serif;
+    color: yellow;
+    padding: .5em;
+    border-radius: 1em;
+    border: .2em solid yellow;
+    font-size: xx-large;
+    transition: 0.5s;
+}
+
+.resetButton:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s;
 }
