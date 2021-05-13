@@ -74,7 +74,7 @@ const fillPlayers = () => {
     </div>
     <div class="centralDiv">
         <img class="logo" src="img/logo.png" alt="logo">
-        <div id="infoContainer"></div>
+        <div id="infoContainer"><p class="vs">vs</p></div>
         <button class="attackButton" onclick="fighting()">ATTACK</button>
         <audio id="lightsaber"><source src="audio/lightsaberSound.mp4" type="audio/wav"></audio>
     </div>
@@ -109,7 +109,7 @@ const fighting = () => {
 
     if ( (fighter1.life > 0 ) && (fighter2.life > 0 )) {
 
-    if ( turn == 0) {
+    if (turn == 0) {
 
         if ( specialAttack == 3 ) {
 

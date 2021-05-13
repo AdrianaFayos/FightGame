@@ -15,14 +15,13 @@ El juego está ambientado en la mítica película de Star Wars y está dividido 
 
 ### Instrucciones 🔧
 
-- Para iniciar el juego deberemos pulsar el botón START. 
+- Para iniciar el juego deberemos pulsar el botón *START*. 
 - A continuación escogeremos dos personajes haciendo click sobre su imagen.
-- Una vez hayamos elegido los dos rivales, para empezar la batalla podemos presionar el botón de play o simplemente esperar 3 segundos.
-- Cuando estemos en la siguiente pantalla haremos click sobre el botón ATACK para comenzar la lucha. El turno será aleatorio y variará en dos ataques diferentes: normal y especial. Cuando la vida de uno de los personajez sea menor a cero automáticamente habrá un ganador.
-- En la última pantalla saldrá la imagen del jugador que ha ganado y también tendremos la posibilidad de reiniciar el juego.
-
+- Una vez hayamos elegido los dos rivales, para empezar la batalla podemos presionar el botón de *PLAY* o simplemente esperar 3 segundos.
+- Cuando estemos en la siguiente pantalla haremos click sobre el botón *ATACK* para comenzar la lucha. El turno será aleatorio y variará en dos ataques diferentes: normal y especial. Cuando la vida de uno de los personajes sea menor o igual a cero automáticamente habrá un ganador.
+- En la última pantalla saldrá la imagen del vencedor y también tendremos la posibilidad de reiniciar el juego.
 <br>
-Si quieres empezar a jugar haz click en el siguiente enlace: [StarWars-Fight-Game](https://adrianafayos.github.io/FightGame/).<br><br>
+Si quieres empezar a jugar haz click en el siguiente enlace: <br>https://adrianafayos.github.io/FightGame/.<br>
 ¡Buena suerte! 🍀
 
 ### Tecnologías utilizadas 
@@ -37,6 +36,5 @@ Si quieres empezar a jugar haz click en el siguiente enlace: [StarWars-Fight-Gam
 
 Desarollado por **Adriana Fayos** <br>
 [GitHub](https://github.com/AdrianaFayos) - [Linkedin](https://linkedin.com/in/adrianafayos)
-
 
 ---

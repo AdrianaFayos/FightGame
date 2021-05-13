@@ -220,6 +220,13 @@ body{
 .logo{
     height: 15em;
 }
+
+.vs {
+    font-family: 'Star Jedi', sans-serif;
+    color: yellow;
+    font-size: 6em;
+    margin: 0;
+}
  
 #infoFight {
     height: 5em;
