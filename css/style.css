@@ -140,33 +140,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    -webkit-filter: drop-shadow(2px 2px 0 black)
-    drop-shadow(-2px 2px 0 black)
-    drop-shadow(2px -2px 0 black)
-    drop-shadow(-2px -2px 0 black);
-
-    filter: drop-shadow(2px 2px 0 black)
-    drop-shadow(-2px 2px 0 black)
-    drop-shadow(2px -2px 0 black)
-    drop-shadow(-2px -2px 0 black);
 }
 
 .imgFighter1, .imgFighter2{
     height: 30em;
-    -webkit-filter: drop-shadow(2px 2px 0 black)
-    drop-shadow(-2px 2px 0 black)
-    drop-shadow(2px -2px 0 black)
-    drop-shadow(-2px -2px 0 black);
-
-    filter: drop-shadow(2px 2px 0 black)
-    drop-shadow(-2px 2px 0 black)
-    drop-shadow(2px -2px 0 black)
-    drop-shadow(-2px -2px 0 black);
 }
 
 .fighterSelected1{
-    filter: grayscale();
     border: .3em solid blue;
     background: none;
     width: 7em;
@@ -180,7 +160,6 @@ body{
 }
 
 .fighterSelected2{
-    filter: grayscale();
     border: .3em solid red;
     background: none;
     width: 7em;
@@ -241,7 +220,7 @@ body{
 .logo{
     height: 15em;
 }
-
+ 
 #infoFight {
     height: 5em;
     width: 10em;
@@ -253,6 +232,10 @@ body{
     border: .2em solid yellow;
     font-size: x-large; 
     text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .attackButton {

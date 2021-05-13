@@ -74,7 +74,7 @@ const fillPlayers = () => {
     </div>
     <div class="centralDiv">
         <img class="logo" src="img/logo.png" alt="logo">
-        <div id="infoFight">START</div>
+        <div id="infoContainer"></div>
         <button class="attackButton" onclick="fighting()">ATTACK</button>
         <audio id="lightsaber"><source src="audio/lightsaberSound.mp4" type="audio/wav"></audio>
     </div>
@@ -92,6 +92,10 @@ const fighting = () => {
     // Play lightsaber sound on click
     lightsaber = document.getElementById("lightsaber");
     lightsaber.play();
+
+    // Div Fight Information
+
+    document.getElementById("infoContainer").innerHTML= `<div id="infoFight"></div>`
 
     // Random Fight
     console.log("empieza la lucha");
@@ -149,8 +153,6 @@ const fighting = () => {
 
 const Winner = () => {
     
-    let winner="";
-
     if(fighter1.life <= 0){
 
         fillWinner(fighter2);
@@ -181,10 +183,17 @@ const fillWinner = (winner) => {
     <div><img class="winnerPic" src="img/characters/${winner.picName}.png" alt="winner" ></div>
     <div class="winnerButton">
           <div class="winnerText">${winner.name} wins !!</div>
-          <button onclick="changeStage('stage1')" class="resetButton">start again</button>
+          <button onclick="reset()" class="resetButton">start again</button>
     </div>      
    `
-} 
+};
+
+
+// Reset Game
+
+const reset = () => {
+    window.location.reload();
+}
 
 
 // Play or Pause Music
