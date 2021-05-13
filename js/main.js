@@ -102,6 +102,9 @@ const fighting = () => {
     let life1 = document.getElementById("lifeBar1");
     let life2 = document.getElementById("lifeBar2");
 
+
+    if ( (fighter1.life > 0 ) && (fighter2.life > 0 )) {
+
     if ( turn == 0) {
 
         if ( specialAttack == 3 ) {
@@ -131,7 +134,7 @@ const fighting = () => {
 
         }
 
-    }
+    }};
 
     console.log(fighter1.life);
     console.log(fighter2.life);

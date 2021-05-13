@@ -13,12 +13,12 @@ class Fighter{
 
 
     hit(enemy){
-        enemy.life -= this.attack - (enemy.defense * (enemy.luck / this.speed));
+        enemy.life -= (this.attack - (enemy.defense * (enemy.luck / this.speed))).toFixed();
     }
 
     
     specialHit(enemy){
-        enemy.life -= ( this.attack + this.technique ) - (enemy.defense * (enemy.luck / this.speed));
+        enemy.life -= (( this.attack + this.technique ) - (enemy.defense * (enemy.luck / this.speed))).toFixed();
     }
 };
 
