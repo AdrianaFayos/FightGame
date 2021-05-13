@@ -155,6 +155,9 @@ const Winner = () => {
     
     if(fighter1.life <= 0){
 
+        document.getElementById("infoContainer").innerHTML= `<div id="infoFight"></div>`
+        infoFight.innerHTML = `game over`;
+
         fillWinner(fighter2);
 
         setTimeout(() => {
@@ -163,6 +166,8 @@ const Winner = () => {
 
     } else if(fighter2.life <= 0){
 
+        document.getElementById("infoContainer").innerHTML= `<div id="infoFight"></div>`
+        infoFight.innerHTML = `game over`;
         fillWinner(fighter1);
 
         setTimeout(() => {

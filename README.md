@@ -22,7 +22,7 @@ El juego está ambientado en la mítica película de Star Wars y está dividido 
 - En la última pantalla saldrá la imagen del jugador que ha ganado y también tendremos la posibilidad de reiniciar el juego.
 
 <br>
-Si quieres empezar a jugar haz click en el siguiente enlace: [Fight-Game](aquí va el enlace de pages).<br><br>
+Si quieres empezar a jugar haz click en el siguiente enlace: [StarWars-Fight-Game](https://adrianafayos.github.io/FightGame/).<br><br>
 ¡Buena suerte! 🍀
 
 ### Tecnologías utilizadas 
