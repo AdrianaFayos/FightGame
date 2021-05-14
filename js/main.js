@@ -25,8 +25,9 @@ const chooseFighter = (character) => {
     if ( fighter1 == "" ) {
 
         fighter1 = allPlayers[character];
-        
+
         document.getElementById(character).className = "fighterSelected1";
+        document.getElementById(character).onclick = ""; // This block the selected fighter
 
         img1 = document.getElementById("imgFighterSelected1");
 
@@ -36,12 +37,12 @@ const chooseFighter = (character) => {
         fighterAudio1 = document.getElementById("fighterAudio1");
         fighterAudio1.play();  
 
-
-    } else if ( fighter2 == "") {
+    } else if ( fighter2 == "" ) {
 
         fighter2 = allPlayers[character];
-        
+    
         document.getElementById(character).className = "fighterSelected2";
+        document.getElementById(character).onclick = ""; // This block the selected fighter
 
         img2 = document.getElementById("imgFighterSelected2");
         img2.innerHTML = `<img class="imgFighter2" src="img/characters/${fighter2.picName}.png" alt="fighter2">
@@ -56,6 +57,7 @@ const chooseFighter = (character) => {
            changeStage("stage3");
         }, 10000); 
     }
+
 }
 
 
@@ -92,7 +94,7 @@ const fighting = () => {
     document.getElementById("infoContainer").innerHTML= `<div id="infoFight"></div>`
 
     // Random Fight
-    console.log("empieza la lucha");
+    //console.log("empieza la lucha");
 
     let turn = Math.floor(Math.random() * 2);
     let specialAttack = Math.floor(Math.random() * 4);
