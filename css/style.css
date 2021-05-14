@@ -31,13 +31,11 @@ body{
 
 /* STAGE 1 */
 
-
-
 .firstScreen {
     width: 100vw;
     height: 100vh;
 
-    background-image: url("/img/home.jpg");
+    background-image: url("../img/home.jpg");
     background-position: center;
 }
 
@@ -74,7 +72,7 @@ body{
 .secondScreen {
     width: 100vw;
     height: 100vh;
-    background-image: url("/img/backgroundCharacters.png");
+    background-image: url("../img/backgroundCharacters.png");
 
 }
 
@@ -158,6 +156,7 @@ body{
     margin: 1em;
     transition: 0.5s;
     background: rgb(104, 104, 104);
+    
 }
 
 .fighterSelected2{
@@ -170,7 +169,9 @@ body{
     margin: 1em;
     transition: 0.5s;
     background: rgb(104, 104, 104);
+    
 }
+
 
 .playButton {
     all: unset;
@@ -192,7 +193,7 @@ body{
     width: 100vw;
     height: 100vh;
 
-    background-image: url("/img/backgroundFight.png");
+    background-image: url("../img/backgroundFight.png");
     background-position: center;
 }
 
@@ -220,6 +221,13 @@ body{
     height: 15em;
 }
 
+.vs {
+    font-family: 'Star Jedi', sans-serif;
+    color: yellow;
+    font-size: 6em;
+    margin: 0;
+}
+ 
 #infoFight {
     height: 5em;
     width: 10em;
@@ -231,6 +239,10 @@ body{
     border: .2em solid yellow;
     font-size: x-large; 
     text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .attackButton {
@@ -252,9 +264,14 @@ body{
     transition: 0.5s;
 }
 
-.lifeBar1, .lifeBar2 {
-    background-color: chartreuse;
-    height: 1.5em;
+#lifeBar1, #lifeBar2 {
+    background: black;
+    font-family: 'Star Jedi', sans-serif;
+    color: yellow;
+    padding: .5em;
+    border-radius: 1em;
+    border: .2em solid yellow;
+    height: 1.8em;
     width: 18em;
     border-radius: 1em;
     text-align: center;
@@ -268,4 +285,71 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* STAGE 4 */
+
+.fourthScreen {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("../img/backgroundWinner.png");
+    background-position: center;
+}
+
+.fourthScreenContainer{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.winnerPic {
+    height: 40em;
+    width: 20em;
+
+    -webkit-filter: drop-shadow(2px 2px 0 yellow)
+    drop-shadow(-2px 2px 0 yellow)
+    drop-shadow(2px -2px 0 yellow)
+    drop-shadow(-2px -2px 0 yellow);
+
+    filter: drop-shadow(2px 2px 0 yellow)
+    drop-shadow(-2px 2px 0 yellow)
+    drop-shadow(2px -2px 0 yellow)
+    drop-shadow(-2px -2px 0 yellow);
+}
+
+.winnerButton {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.winnerText {
+    font-family: 'Star Jedi', sans-serif;
+    color: yellow;
+    font-size: 3em;
+}
+
+.resetButton {
+    all: unset;
+    background: black;
+    font-family: 'Star Jedi', sans-serif;
+    color: yellow;
+    padding: .5em;
+    border-radius: 1em;
+    border: .2em solid yellow;
+    font-size: xx-large;
+    transition: 0.5s;
+}
+
+.resetButton:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s;
 }
