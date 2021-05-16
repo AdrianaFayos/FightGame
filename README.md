@@ -31,8 +31,7 @@ Si quieres empezar a jugar haz click en el siguiente enlace: <br>https://adriana
 ### Futuras mejoras
 - Crear un botón que permita deseleccionar los personajes escogidos.
 - Que el audio de fondo tenga autoplay al abrir la página.
-- Bajar el volumen del audio de fondo, y que los de los personajes estén al mismo nivel.
-- 
+- Bajar el volumen del audio de fondo, y que los de los personajes estén al mismo nivel. 
 
 <br>
 
