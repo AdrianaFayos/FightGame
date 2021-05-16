@@ -22,13 +22,13 @@ class Fighter{
     }
 };
 
-let player1 = new Fighter("Luke Skywalker", "lukeSkywalker", 30, 40, 40, 40);
+let player1 = new Fighter("Luke Skywalker", "lukeSkywalker", 30, 20, 30, 30);
 let player2 = new Fighter("Leia", "leia", 30, 30, 40, 20);
-let player3 = new Fighter("Yoda", "yoda", 50, 40, 40, 10);
+let player3 = new Fighter("Yoda", "yoda", 50, 40, 30, 10);
 let player4 = new Fighter("Chewbacca", "chewbacca", 40, 20, 20, 30);
-let player5 = new Fighter("Darth vader", "darthVader", 40, 30, 40, 30 );
-let player6 = new Fighter("Darth Maul", "darthMaul", 30, 20, 30, 30);
-let player7 = new Fighter("Emperor Palpatine", "emperorPalpatine", 50,20,30,20);
+let player5 = new Fighter("Darth vader", "darthVader", 40, 30, 30, 20);
+let player6 = new Fighter("Darth Maul", "darthMaul", 30, 20, 20, 20);
+let player7 = new Fighter("Emperor Palpatine", "emperorPalpatine", 40,20,30,20);
 let player8 = new Fighter("Stormtrooper", "stormtrooper", 20, 20, 30, 30 );
 
 let allPlayers = {

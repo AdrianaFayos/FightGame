@@ -125,7 +125,7 @@ const fighting = () => {
 
         } else {
 
-            if ( specialAttack == 4 ) {
+            if ( specialAttack == 1 ) {
 
                 fighter2.specialHit(fighter1);
                 infoFight.innerHTML = `${fighter2.name} Special Hit`;
