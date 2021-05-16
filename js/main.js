@@ -69,7 +69,7 @@ const fillPlayers = () => {
 
     players.innerHTML = `
     <div class="fighterOne" >
-         <div id="lifeBar1">${fighter1.life}</div>
+         <div class="lifeBar"><div id="lifeBar1"></div></div>
          <div class="picFighter1"><img class="imgFighter1" src="img/characters/${fighter1.picName}.png" alt="fighter1" ></div>
     </div>
     <div class="centralDiv">
@@ -79,7 +79,7 @@ const fillPlayers = () => {
         <audio id="lightsaber"><source src="audio/lightsaberSound.mp4" type="audio/wav"></audio>
     </div>
     <div class="fighterTwo">
-         <div id="lifeBar2">${fighter2.life}</div>
+         <div class="lifeBar"><div id="lifeBar2"></div></div>
          <div class="picFighter2"><img class="imgFighter2" src="img/characters/${fighter2.picName}.png" alt="fighter2"></div>
     </div>`
 }
@@ -141,25 +141,29 @@ const fighting = () => {
         }
     };
 
-    // Life Bar can not be under 0 
-
-    if ((fighter1.life > 0 ) && (fighter2.life > 0 )) {
-
-        life1.innerHTML = `${fighter1.life}`;
-        life2.innerHTML = `${fighter2.life}`;
-    
-    } else if (fighter1.life <= 0){ 
-
-        life1.innerHTML = "0" 
-
-    } else {
-
-            life2.innerHTML = "0"
-    }
          
 
+    updateLife();
     Winner();
 
+}
+
+// Life Bar
+
+const updateLife = () => {
+
+    if ((fighter1.life > 0 ) && (fighter2.life > 0 )) {
+        let lifePlayer1 = fighter1.life;
+        let lifePlayer2 = fighter2.life;
+            lifePlayer1 = (lifePlayer1 * 100)/300;
+            document.getElementById("lifeBar1").style.width = lifePlayer1+"%";
+            lifePlayer2 = (lifePlayer2 * 100)/300;
+            document.getElementById("lifeBar2").style.width = lifePlayer2+"%";
+    } else if (fighter1.life <= 0) {
+        document.getElementById("lifeBar1").style.width = 0;
+    } else {
+        document.getElementById("lifeBar2").style.width = 0;
+    }
 }
 
 // Winner
